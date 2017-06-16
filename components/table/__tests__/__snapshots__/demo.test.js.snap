@@ -43,22 +43,26 @@ exports[`renders ./components/table/demo/ajax.md correctly 1`] = `
                       <div
                         class="ant-table-column-sorter"
                       >
-                        <span
-                          class="ant-table-column-sorter-up off"
-                          title="↑"
+                        <div
+                          class="ant-table-column-sorter-icon-wrapper"
                         >
-                          <i
-                            class="anticon anticon-caret-up"
-                          />
-                        </span>
-                        <span
-                          class="ant-table-column-sorter-down off"
-                          title="↓"
-                        >
-                          <i
-                            class="anticon anticon-caret-down"
-                          />
-                        </span>
+                          <span
+                            class="ant-table-column-sorter-up off"
+                            title="↑"
+                          >
+                            <i
+                              class="anticon anticon-caret-up"
+                            />
+                          </span>
+                          <span
+                            class="ant-table-column-sorter-down off"
+                            title="↓"
+                          >
+                            <i
+                              class="anticon anticon-caret-down"
+                            />
+                          </span>
+                        </div>
                       </div>
                     </span>
                   </th>
@@ -67,10 +71,18 @@ exports[`renders ./components/table/demo/ajax.md correctly 1`] = `
                   >
                     <span>
                       Gender
-                      <i
-                        class="anticon anticon-filter ant-dropdown-trigger"
-                        title="筛选"
-                      />
+                      <div
+                        class="ant-table-filter"
+                      >
+                        <div
+                          class="ant-table-filter-icon-wrapper"
+                        >
+                          <i
+                            class="anticon anticon-filter ant-dropdown-trigger"
+                            title="筛选"
+                          />
+                        </div>
+                      </div>
                     </span>
                   </th>
                   <th
@@ -876,11 +888,19 @@ exports[`renders ./components/table/demo/custom-filter-panel.md correctly 1`] = 
                   >
                     <span>
                       Name
-                      <i
-                        class="anticon anticon-smile-o ant-table-filter-icon ant-dropdown-trigger"
-                        style="color:#aaa;"
-                        title="筛选"
-                      />
+                      <div
+                        class="ant-table-filter"
+                      >
+                        <div
+                          class="ant-table-filter-icon-wrapper"
+                        >
+                          <i
+                            class="anticon anticon-smile-o ant-table-filter-icon ant-dropdown-trigger"
+                            style="color:#aaa;"
+                            title="筛选"
+                          />
+                        </div>
+                      </div>
                     </span>
                   </th>
                   <th
@@ -895,10 +915,18 @@ exports[`renders ./components/table/demo/custom-filter-panel.md correctly 1`] = 
                   >
                     <span>
                       Address
-                      <i
-                        class="anticon anticon-filter ant-dropdown-trigger"
-                        title="筛选"
-                      />
+                      <div
+                        class="ant-table-filter"
+                      >
+                        <div
+                          class="ant-table-filter-icon-wrapper"
+                        >
+                          <i
+                            class="anticon anticon-filter ant-dropdown-trigger"
+                            title="筛选"
+                          />
+                        </div>
+                      </div>
                     </span>
                   </th>
                 </tr>
@@ -6690,10 +6718,18 @@ exports[`renders ./components/table/demo/grouping-columns.md correctly 1`] = `
                     >
                       <span>
                         Name
-                        <i
-                          class="anticon anticon-filter ant-dropdown-trigger"
-                          title="筛选"
-                        />
+                        <div
+                          class="ant-table-filter"
+                        >
+                          <div
+                            class="ant-table-filter-icon-wrapper"
+                          >
+                            <i
+                              class="anticon anticon-filter ant-dropdown-trigger"
+                              title="筛选"
+                            />
+                          </div>
+                        </div>
                       </span>
                     </th>
                     <th
@@ -6731,22 +6767,26 @@ exports[`renders ./components/table/demo/grouping-columns.md correctly 1`] = `
                         <div
                           class="ant-table-column-sorter"
                         >
-                          <span
-                            class="ant-table-column-sorter-up off"
-                            title="↑"
+                          <div
+                            class="ant-table-column-sorter-icon-wrapper"
                           >
-                            <i
-                              class="anticon anticon-caret-up"
-                            />
-                          </span>
-                          <span
-                            class="ant-table-column-sorter-down off"
-                            title="↓"
-                          >
-                            <i
-                              class="anticon anticon-caret-down"
-                            />
-                          </span>
+                            <span
+                              class="ant-table-column-sorter-up off"
+                              title="↑"
+                            >
+                              <i
+                                class="anticon anticon-caret-up"
+                              />
+                            </span>
+                            <span
+                              class="ant-table-column-sorter-down off"
+                              title="↓"
+                            >
+                              <i
+                                class="anticon anticon-caret-down"
+                              />
+                            </span>
+                          </div>
                         </div>
                       </span>
                     </th>
@@ -7353,10 +7393,18 @@ exports[`renders ./components/table/demo/grouping-columns.md correctly 1`] = `
                     >
                       <span>
                         Name
-                        <i
-                          class="anticon anticon-filter ant-dropdown-trigger"
-                          title="筛选"
-                        />
+                        <div
+                          class="ant-table-filter"
+                        >
+                          <div
+                            class="ant-table-filter-icon-wrapper"
+                          >
+                            <i
+                              class="anticon anticon-filter ant-dropdown-trigger"
+                              title="筛选"
+                            />
+                          </div>
+                        </div>
                       </span>
                     </th>
                   </tr>
@@ -7787,27 +7835,39 @@ exports[`renders ./components/table/demo/head.md correctly 1`] = `
                       <div
                         class="ant-table-column-sorter"
                       >
-                        <span
-                          class="ant-table-column-sorter-up off"
-                          title="↑"
+                        <div
+                          class="ant-table-column-sorter-icon-wrapper"
                         >
-                          <i
-                            class="anticon anticon-caret-up"
-                          />
-                        </span>
-                        <span
-                          class="ant-table-column-sorter-down off"
-                          title="↓"
-                        >
-                          <i
-                            class="anticon anticon-caret-down"
-                          />
-                        </span>
+                          <span
+                            class="ant-table-column-sorter-up off"
+                            title="↑"
+                          >
+                            <i
+                              class="anticon anticon-caret-up"
+                            />
+                          </span>
+                          <span
+                            class="ant-table-column-sorter-down off"
+                            title="↓"
+                          >
+                            <i
+                              class="anticon anticon-caret-down"
+                            />
+                          </span>
+                        </div>
                       </div>
-                      <i
-                        class="anticon anticon-filter ant-dropdown-trigger"
-                        title="筛选"
-                      />
+                      <div
+                        class="ant-table-filter"
+                      >
+                        <div
+                          class="ant-table-filter-icon-wrapper"
+                        >
+                          <i
+                            class="anticon anticon-filter ant-dropdown-trigger"
+                            title="筛选"
+                          />
+                        </div>
+                      </div>
                     </span>
                   </th>
                   <th
@@ -7818,22 +7878,26 @@ exports[`renders ./components/table/demo/head.md correctly 1`] = `
                       <div
                         class="ant-table-column-sorter"
                       >
-                        <span
-                          class="ant-table-column-sorter-up off"
-                          title="↑"
+                        <div
+                          class="ant-table-column-sorter-icon-wrapper"
                         >
-                          <i
-                            class="anticon anticon-caret-up"
-                          />
-                        </span>
-                        <span
-                          class="ant-table-column-sorter-down off"
-                          title="↓"
-                        >
-                          <i
-                            class="anticon anticon-caret-down"
-                          />
-                        </span>
+                          <span
+                            class="ant-table-column-sorter-up off"
+                            title="↑"
+                          >
+                            <i
+                              class="anticon anticon-caret-up"
+                            />
+                          </span>
+                          <span
+                            class="ant-table-column-sorter-down off"
+                            title="↓"
+                          >
+                            <i
+                              class="anticon anticon-caret-down"
+                            />
+                          </span>
+                        </div>
                       </div>
                     </span>
                   </th>
@@ -7845,27 +7909,39 @@ exports[`renders ./components/table/demo/head.md correctly 1`] = `
                       <div
                         class="ant-table-column-sorter"
                       >
-                        <span
-                          class="ant-table-column-sorter-up off"
-                          title="↑"
+                        <div
+                          class="ant-table-column-sorter-icon-wrapper"
                         >
-                          <i
-                            class="anticon anticon-caret-up"
-                          />
-                        </span>
-                        <span
-                          class="ant-table-column-sorter-down off"
-                          title="↓"
-                        >
-                          <i
-                            class="anticon anticon-caret-down"
-                          />
-                        </span>
+                          <span
+                            class="ant-table-column-sorter-up off"
+                            title="↑"
+                          >
+                            <i
+                              class="anticon anticon-caret-up"
+                            />
+                          </span>
+                          <span
+                            class="ant-table-column-sorter-down off"
+                            title="↓"
+                          >
+                            <i
+                              class="anticon anticon-caret-down"
+                            />
+                          </span>
+                        </div>
                       </div>
-                      <i
-                        class="anticon anticon-filter ant-dropdown-trigger"
-                        title="筛选"
-                      />
+                      <div
+                        class="ant-table-filter"
+                      >
+                        <div
+                          class="ant-table-filter-icon-wrapper"
+                        >
+                          <i
+                            class="anticon anticon-filter ant-dropdown-trigger"
+                            title="筛选"
+                          />
+                        </div>
+                      </div>
                     </span>
                   </th>
                 </tr>
@@ -8663,27 +8739,39 @@ exports[`renders ./components/table/demo/reset-filter.md correctly 1`] = `
                         <div
                           class="ant-table-column-sorter"
                         >
-                          <span
-                            class="ant-table-column-sorter-up off"
-                            title="↑"
+                          <div
+                            class="ant-table-column-sorter-icon-wrapper"
                           >
-                            <i
-                              class="anticon anticon-caret-up"
-                            />
-                          </span>
-                          <span
-                            class="ant-table-column-sorter-down off"
-                            title="↓"
-                          >
-                            <i
-                              class="anticon anticon-caret-down"
-                            />
-                          </span>
+                            <span
+                              class="ant-table-column-sorter-up off"
+                              title="↑"
+                            >
+                              <i
+                                class="anticon anticon-caret-up"
+                              />
+                            </span>
+                            <span
+                              class="ant-table-column-sorter-down off"
+                              title="↓"
+                            >
+                              <i
+                                class="anticon anticon-caret-down"
+                              />
+                            </span>
+                          </div>
                         </div>
-                        <i
-                          class="anticon anticon-filter ant-dropdown-trigger"
-                          title="筛选"
-                        />
+                        <div
+                          class="ant-table-filter"
+                        >
+                          <div
+                            class="ant-table-filter-icon-wrapper"
+                          >
+                            <i
+                              class="anticon anticon-filter ant-dropdown-trigger"
+                              title="筛选"
+                            />
+                          </div>
+                        </div>
                       </span>
                     </th>
                     <th
@@ -8694,22 +8782,26 @@ exports[`renders ./components/table/demo/reset-filter.md correctly 1`] = `
                         <div
                           class="ant-table-column-sorter"
                         >
-                          <span
-                            class="ant-table-column-sorter-up off"
-                            title="↑"
+                          <div
+                            class="ant-table-column-sorter-icon-wrapper"
                           >
-                            <i
-                              class="anticon anticon-caret-up"
-                            />
-                          </span>
-                          <span
-                            class="ant-table-column-sorter-down off"
-                            title="↓"
-                          >
-                            <i
-                              class="anticon anticon-caret-down"
-                            />
-                          </span>
+                            <span
+                              class="ant-table-column-sorter-up off"
+                              title="↑"
+                            >
+                              <i
+                                class="anticon anticon-caret-up"
+                              />
+                            </span>
+                            <span
+                              class="ant-table-column-sorter-down off"
+                              title="↓"
+                            >
+                              <i
+                                class="anticon anticon-caret-down"
+                              />
+                            </span>
+                          </div>
                         </div>
                       </span>
                     </th>
@@ -8721,27 +8813,39 @@ exports[`renders ./components/table/demo/reset-filter.md correctly 1`] = `
                         <div
                           class="ant-table-column-sorter"
                         >
-                          <span
-                            class="ant-table-column-sorter-up off"
-                            title="↑"
+                          <div
+                            class="ant-table-column-sorter-icon-wrapper"
                           >
-                            <i
-                              class="anticon anticon-caret-up"
-                            />
-                          </span>
-                          <span
-                            class="ant-table-column-sorter-down off"
-                            title="↓"
-                          >
-                            <i
-                              class="anticon anticon-caret-down"
-                            />
-                          </span>
+                            <span
+                              class="ant-table-column-sorter-up off"
+                              title="↑"
+                            >
+                              <i
+                                class="anticon anticon-caret-up"
+                              />
+                            </span>
+                            <span
+                              class="ant-table-column-sorter-down off"
+                              title="↓"
+                            >
+                              <i
+                                class="anticon anticon-caret-down"
+                              />
+                            </span>
+                          </div>
                         </div>
-                        <i
-                          class="anticon anticon-filter ant-dropdown-trigger"
-                          title="筛选"
-                        />
+                        <div
+                          class="ant-table-filter"
+                        >
+                          <div
+                            class="ant-table-filter-icon-wrapper"
+                          >
+                            <i
+                              class="anticon anticon-filter ant-dropdown-trigger"
+                              title="筛选"
+                            />
+                          </div>
+                        </div>
                       </span>
                     </th>
                   </tr>

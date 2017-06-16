@@ -13,22 +13,26 @@ exports[`Table.sorter renders sorter icon correctly 1`] = `
         <div
           class="ant-table-column-sorter"
         >
-          <span
-            class="ant-table-column-sorter-up off"
-            title="↑"
+          <div
+            class="ant-table-column-sorter-icon-wrapper"
           >
-            <i
-              class="anticon anticon-caret-up"
-            />
-          </span>
-          <span
-            class="ant-table-column-sorter-down off"
-            title="↓"
-          >
-            <i
-              class="anticon anticon-caret-down"
-            />
-          </span>
+            <span
+              class="ant-table-column-sorter-up off"
+              title="↑"
+            >
+              <i
+                class="anticon anticon-caret-up"
+              />
+            </span>
+            <span
+              class="ant-table-column-sorter-down off"
+              title="↓"
+            >
+              <i
+                class="anticon anticon-caret-down"
+              />
+            </span>
+          </div>
         </div>
       </span>
     </th>

@@ -1504,10 +1504,18 @@ exports[`renders ./components/locale-provider/demo/all.md correctly 1`] = `
                         >
                           <span>
                             Name
-                            <i
-                              class="anticon anticon-filter ant-dropdown-trigger"
-                              title="Filter Menu"
-                            />
+                            <div
+                              class="ant-table-filter"
+                            >
+                              <div
+                                class="ant-table-filter-icon-wrapper"
+                              >
+                                <i
+                                  class="anticon anticon-filter ant-dropdown-trigger"
+                                  title="Filter Menu"
+                                />
+                              </div>
+                            </div>
                           </span>
                         </th>
                         <th

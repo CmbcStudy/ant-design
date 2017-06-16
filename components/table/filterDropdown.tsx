@@ -82,6 +82,9 @@ export default class FilterMenu extends React.Component<FilterMenuProps, any> {
   }
 
   setVisible(visible) {
+    if (visible === this.state.visible) {
+      return;
+    }
     const { column } = this.props;
     if (!('filterDropdownVisible' in column)) {
       this.setState({ visible });
@@ -102,10 +105,20 @@ export default class FilterMenu extends React.Component<FilterMenuProps, any> {
     this.confirmFilter();
   }
 
-  onVisibleChange = (visible) => {
+  handleVisibleChange = (visible) => {
     this.setVisible(visible);
     if (!visible) {
       this.confirmFilter();
+    }
+  }
+
+  // use mouseDown to prevent rc-trigger's mouseDown event on document
+  handleMouseDown = (e) => {
+    if (e.target === e.currentTarget) {
+      this.setVisible(!this.state.visible);
+      if (this.state.visible) {
+        this.confirmFilter();
+      }
     }
   }
 
@@ -182,7 +195,9 @@ export default class FilterMenu extends React.Component<FilterMenuProps, any> {
       }),
     }) : <Icon title={locale.filterTitle} type="filter" className={dropdownSelectedClass} />;
   }
+
   render() {
+    const { visible } = this.state;
     const { column, locale, prefixCls, dropdownPrefixCls, getPopupContainer } = this.props;
     // default multiple selection in filter dropdown
     const multiple = ('filterMultiple' in column) ? column.filterMultiple : true;
@@ -224,15 +239,19 @@ export default class FilterMenu extends React.Component<FilterMenuProps, any> {
     );
 
     return (
-      <Dropdown
-        trigger={['click']}
-        overlay={menus}
-        visible={this.neverShown ? false : this.state.visible}
-        onVisibleChange={this.onVisibleChange}
-        getPopupContainer={getPopupContainer}
-      >
-        {this.renderFilterIcon()}
-      </Dropdown>
+      <div className={prefixCls}>
+        <div className={`${prefixCls}-icon-wrapper`} onMouseDown={this.handleMouseDown}>
+          <Dropdown
+            trigger={['click']}
+            overlay={menus}
+            visible={this.neverShown ? false : visible}
+            onVisibleChange={this.handleVisibleChange}
+            getPopupContainer={getPopupContainer}
+          >
+            {this.renderFilterIcon()}
+          </Dropdown>
+        </div>
+      </div>
     );
   }
 }
